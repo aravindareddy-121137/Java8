@@ -26,7 +26,28 @@ OOPS in JAVA
    ---------------------
 
    JDBC API
-   
+
+   Employee{
+
+       void display();
+       void delete();
+       void update();
+       void save();
+   }
+
+   Employee e1; : junior 
+   Employee e2; : senior
+   Employee e3; : senior lead
+
+
+  class Abc{} - POJO
+
+   Hibernate
+   Spring
+   JPA
+   Structs
+
+
 
 
 
