@@ -1,0 +1,36 @@
+OOPS in JAVA
+-------------------------------------
+1. class
+2. object
+3. encapulation
+		-> access modifers like public, protected, defult and private
+		-> packages
+		-> POJO (plain old java object), Bean, Model 
+		-> method overloading
+4. inheritance
+		-> reuse class code
+		-> method overriding 
+5. abstraction
+		-> hiding 
+		-> method override restirictions
+		-> tight coupling
+6. polymorphism
+		-> interface -> loose couling
+
+
+   40% - OOPS
+   20% - java.lang package
+   10% - IO operations
+   30% - collection api
+
+   ---------------------
+
+   JDBC API
+   
+
+
+
+
+
+
+

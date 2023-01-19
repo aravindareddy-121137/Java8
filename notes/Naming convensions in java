@@ -1,0 +1,16 @@
+Naming convensions in java
+
+-> every class in java should starts with upper case letter. If there are more than
+   ome word in class name, then each class name should be in uppercase letter
+   Ex: Employee, InputSream, FileInputStream, NosuchDataFoundException
+
+-> every method,variables and objects shold starts with lowercase letter. Incase  there are more than one word defined, then first letter of each second word should  be in upper case letter
+ex: display(), processData(), markStudentAttendence(), average, employee .. etc
+
+-> all keywords and package names in java must be in lower case letters
+   ex: int, if, class
+-> all cont in java should be in upper case letters
+   PI, MAX_AGE .. etc
+
+   
+
