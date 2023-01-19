@@ -50,6 +50,64 @@ OOPS in JAVA
 
 
 
+  class A{
+
+  	int a; 
+  	static int b;
+
+  	void f1(){
+  	   b=20; // valid
+  	   a=200; // valid
+  	}
+  	static void f2(){
+  	  b=300; // valid
+  	  a=500; // invalid
+  	  A obj=new A();
+      obj.a=500; // valid
+  	}
+  }
+
+  class B{
+    
+       void f3(){
+       		A obj=new A();
+       		 obj.a=200;
+       }
+
+       static void f4(){
+             A obj=new A();
+       		 obj.a=200;
+       }
+
+  }
+
+
+ -> should create in static methods of the same class
+ -> should create in static , non static(instance) methods and constructors of other classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
