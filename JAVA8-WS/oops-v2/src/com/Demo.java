@@ -46,6 +46,51 @@ public class Demo {
 	 *   -> to access non static  data from static and non static methods of another classes
 	 *
 	 *
+	 *   how to access static data
+	 *   ----------------------------
+	 *   -> static data should be accessed directly from the same class
+	 *   -> static data must be accessed with class name from another class
+	 *
+	 *
+	 *
+	 *     2. methods
+	 *     ------------------------
+	 *     1.instance
+	 *     2.static
+	 *     3.native methods
+	 *     4.abstract methods
+	 *     
+	 *     method signature
+	 *     --------------------
+	 *     -> name of method
+	 *     -> number of arguments
+	 *     -> type of arguments
+	 *     -> position of arguments
+	 *     
+	 *     ex: void f1(), void f1(int x), void f1(int x,float y)
+	 *      
+	 *     arguments in methods : 2 types
+	 *     --------------------------------
+	 *     1.actual arguments: method declaration
+	 *     		f1(x); // x is actual argument
+	 *     2.formal arguments: method body or definition
+	 *     		void f1(int x){} . here x is formal argument
+	 *     
+	 *     
+	 *     call by value and call by reference
+	 *     -------------------------------------
+	 *     -> changes of formal argument reflects back to the actual argument. this is called call by reference
+	 *     -> changes of formal arguments will not reflects back to the actual argument. This is called call by value
+	 *    
+	 *     note
+	 *     -----
+	 *     -> by default all objects are call by reference
+	 *     -> all primitive types are call by value
+	 *     
+	 *     
+	 *     
+	 *     
+	 *
 	 */
 	
 	
