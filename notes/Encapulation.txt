@@ -1,2 +1,20 @@
 Encapulation
 ================
+=> wrapping of properties and methods together
+
+	-> access modifiers
+			-> public
+			-> protected
+			-> default
+			-> private
+
+	-> package?
+
+
+
+	package
+	---------
+	-> package means a directory / folder
+	-> package holds/organizes all related/specified classes
+
+
