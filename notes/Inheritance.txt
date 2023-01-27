@@ -1,0 +1,19 @@
+Inheritance
+==================
+
+ Types : 2 types
+ -----------------
+ 1. single :  any sub class must have only one super class
+ 			-> super class/base class/parent class
+ 			-> sub class/derrived class/child class
+
+ 2. multiple : any sub class can have more than 1 super classes
+
+
+-> re-usability : objects and methods
+-> polymorphism : method overridding
+-> abstractions => storing sub class object in super class ref
+
+
+
+
