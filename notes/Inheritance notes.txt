@@ -1,0 +1,40 @@
+Inheritance notes
+===========================
+Note: never ever create sub class object directly. Insted follow below points.
+-----
+1.super class object/ref can store/hold all its sub class/implementation class objects
+2.sub class object can not hold super class object or ref
+3.super class ref objet can be used to access all the methods of super class. and common methods (overrriden methods/a method present in both super and sub class) of sub class 
+
+4.super refe object can not access the individual methods (a method defined only in sub class not in super class) of the sub class
+
+
+method override notes
+==========================
+1. override means defining same method signature of super class into sub class
+
+  method overriding accessibility
+  ----------------------------------
+  1. if the super class method defined as public, then all its sub classes methods
+     must override with 'public' access modifier only
+  2. if the super method defined as 'default', then sub class overridden methods
+     can be defined as 'default,protected and public'
+  3. if the super class method defined as 'protected', then sub class overrriden 
+     methods can be defined as 'protected and public'
+
+  4. private,static and final methods can not be overridden in sub classes
+
+
+  what is final?
+  	-> if a variable defined as final, then its constant
+  	-> if a method is defined as final, then it can not be overrriden in sub classes
+  	-> if a class is defied as final, then that class can not sub classes
+
+   A class in java can be defined only as public , final and abstract. 
+   
+
+
+
+
+
+
