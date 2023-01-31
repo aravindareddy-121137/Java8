@@ -1,24 +1,23 @@
 package com;
 
-public class ContractEmployee extends Employee{
+public class RegularEmployee extends Employee{
 	
-	private double noOfHoursWorked;
-	private double hourCost;
-	
+	private double noOfDaysWorked;
+	private double dayCost;
 	
 	public void acceptData(int empId, String empName, String empType) {
 		this.setEmpId(empId);
 		this.setEmpName(empName);
 		this.setEmpType(empType);
-		noOfHoursWorked=35;
-		hourCost=670;
+		noOfDaysWorked=23;
+		dayCost=2500;
+		
 	}
 	
-	
-	/*
+	@Override
 	public void processSalary() {
-		this.setSalary(hourCost*noOfHoursWorked);
+		this.setSalary(dayCost*noOfDaysWorked);
 	}
-	*/
+	
 
 }

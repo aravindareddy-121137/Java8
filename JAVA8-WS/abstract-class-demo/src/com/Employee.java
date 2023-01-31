@@ -1,7 +1,7 @@
 package com;
 
 
-public class Employee {
+public abstract class Employee {
 	
 	private int empId;
 	private String empName;
@@ -14,9 +14,7 @@ public class Employee {
 	}
 	
 	
-	public void processSalary() {
-		
-	}
+	public abstract void processSalary(); // method specification
 	
 	
 	public int getEmpId() {

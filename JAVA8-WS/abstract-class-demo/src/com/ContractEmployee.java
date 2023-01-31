@@ -15,10 +15,10 @@ public class ContractEmployee extends Employee{
 	}
 	
 	
-	/*
+	@Override
 	public void processSalary() {
 		this.setSalary(hourCost*noOfHoursWorked);
 	}
-	*/
+	
 
 }

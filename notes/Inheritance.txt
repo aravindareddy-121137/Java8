@@ -15,5 +15,157 @@ Inheritance
 -> abstractions => storing sub class object in super class ref
 
 
+ problem : sub class need not to override super class methods. So It may end up with wrong results.
+
+ what is the solution? : use 'abstract' classes
+======================
+
+what is an abstract class?
+==============================
+
+-> abstract class is a method specification which may contains zero or more abstract 
+   methods and concrete methods
+
+-> abstract methods never specify body. its only method specification.
+-> the sub classes of abstract class must override all the abstract methods 
+-> If any of the sub classes of an abstract class not overriding any one of the methods 
+   of abstract class, then that sub class must be defined as 'abstract'
+
+-> abstract class can not instanciated. (We can not create object to an abstract class)
+-> we can create ref variable to an abstract class.
+-> abstract class ref can be used to hold all its implementation / sub class obejcts
+-> abstract class ref objet can be used to access all the methods of abstract class. and common methods (overrriden methods/a method present in both super and sub class) of sub class 
+
+4.abstract class refe object can not access the individual methods (a method defined only in sub class not in super class) of the sub class.
+
+Note: We can not declare a class both as 'abstract and final'
+
+
+ problem with 'abstract' classes
+ ===================================
+ -> abstract classes always support 'tight couple behaviour'
+
+ what is tight coupleing?
+ ==============================
+ -> Any application which is not supporting extensibility.
+ Tight coupling in Java refers to a design pattern where components or classes in a system depend heavily on each other, making the system more difficult to modify, test, and maintain. Tight coupling makes it difficult to make changes to one component without affecting other components in the system
+
+   A - implementation still pending
+   B - Test (not done) B is depends on class A
+   C - Test (done)
+
+
+   two points
+   ===========
+   1. ->
+      class A{
+        void f1(){}
+      }
+      class B{
+        A a;  // tghrough a , can access data of A class from B : has 'A' relation ship
+        void f1(){}
+      }
+
+   2. ->
+     class A{
+        void f1(){}
+     }
+     class B extends A{
+        void f1(){}
+     } // B class access data of A : is 'A' relationship
+
+   
+  why Tight coupling in Java is not recommended?
+  ===========================================================
+   because it makes the system more rigid and difficult to maintain. When classes are tightly coupled, changing one class often requires changes to other classes, making the system complex and difficult to modify. This can lead to increased maintenance costs and decreased reliability and scalability. In addition, tightly coupled systems are more difficult to test, as changes in one class can affect the behavior of other classes. To mitigate these problems, it is recommended to follow the principles of loose coupling, which promote independence and flexibility between components, making the system easier to modify and maintain over time.
+
+
+   what is loose coupling?
+   ==========================
+   Loose coupling in Java refers to a design pattern where components or classes in a system have minimal interdependence, allowing them to be modified, tested, and maintained independently. Loose coupling allows for greater flexibility and ease of maintenance, as changes in one component will have minimal impact on other components in the system. This makes the system more modular, easier to test, and more scalable. To achieve loose coupling, Java developers can use techniques such as dependency injection, interface-based programming, and event-driven architecture.
+
+   what is an iterface in java?
+   ================================
+   -> interface is a method specification which contains zero or more abstract methods
+   -> any iterface having zero methods, is called 'marker / tagged' interface
+   -> by default very method in an interface is 'public and abstract'
+   -> by default every variable in an interface by default 'public , final and static'
+   -> all the implementation classes of the interface must implement all the abstract 
+      methods of interface
+  -> we can not instanciate object to an interface. but we can create rf to an interface 
+  -> interface ref can be used to hold all its implementation / sub class obejcts
+  -> interface ref objet can be used to access all the methods of abstract class. and common methods (overrriden methods/a method present in both super and sub class) of sub class 
+
+  -> interface refe object can not access the individual methods (a method defined only in sub class not in super class) of the sub class.
+
+  Notes
+  ------
+  1. class can extends to one class
+  2. class can not extends more than one class. Class A extends B,C is wrong
+  3. class can not implements another class
+  4. class can implements onky interface.
+  5. class can implements more than one interface at-a-time: class A implements B,C,D
+  6. interface can not extends to a class : 
+  7. interface can extends more than one interface
+  8. interface can not implements another interface
+
+  why  do we neeed interfaces in java?
+  =========================================
+  Interfaces in Java provide a way to define a contract that specifies what methods a class must implement, without specifying how those methods should be implemented. Interfaces provide a level of abstraction between classes and allow for greater flexibility and loose coupling in a system.
+
+Some of the benefits of using interfaces in Java include:
+
+Abstraction: Interfaces allow for abstraction and encapsulation, making it easier to change implementation details without affecting the users of the interface.
+
+Polymorphism: Interfaces allow for polymorphism, enabling objects of different classes to be treated as objects of a common type.
+
+Reusability: Interfaces promote code reuse by allowing multiple classes to implement the same interface.
+
+Loose coupling: Interfaces promote loose coupling by allowing different classes to be used interchangeably without affecting each other.
+
+Overall, interfaces are an essential tool in Java programming, allowing for greater flexibility, maintainability, and scalability in a system.
+
+ 
+ Notes: 
+ 1. If any class implemnts only one interface, then we ccan not diffenciate diff b/w  abstract class and interface
+ 2. we use interfaces in java to implement 'multiple inheritance
+
+  ex: interface A{}
+      interface B{}
+      interface C{}
+      class D implements A,B,C {} ==> muktiple inherirance
+      class E implements A {} ==> single inheritance
+
+
+      what is marker interface?
+      ===========================
+      A marker interface in Java is an interface that has no methods or fields, but is used to provide a special meaning to classes that implement it. Marker interfaces serve as a type of tag or marker, indicating that a class has specific properties or behaviors.
+
+For example, the Serializable interface is a marker interface in Java that indicates that an object can be written to and read from a binary stream. Classes that implement the Serializable interface can be saved to disk, sent over a network, or otherwise persisted.
+
+Another example of a marker interface in Java is the Cloneable interface, which indicates that an object can be cloned or copied. Classes that implement the Cloneable interface can be duplicated using the clone() method.
+
+In summary, marker interfaces are used to provide a way to annotate or tag classes with special properties or behaviors, without adding any actual functionality to the class.
+
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
