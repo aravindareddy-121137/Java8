@@ -1,0 +1,122 @@
+java.lang package
+=====================
+-> every class and imterfaces of this package, by default imported in al java applications.
+
+ classes and interfaces 
+ ==============================================
+ 1.Object class
+ 2.String/StringBuffer/StringBuilder (String Operations)
+ 3.Wraper classes
+ 4.Garbage collection (memory management(HEAP/stack))
+ 5.Exception handling
+ 6.Threads
+
+ ===============================================
+
+ api's
+ ======
+ 1. java.io
+ 2. java.util
+
+ ===============================================
+
+ database programming
+ 	1. jdbc
+ 	2. orm
+ 		-> hibernate
+ 		-> jpa
+================================================
+
+     JEE (Java enterprise edition)
+     ==================================
+     1.servelets and jsp
+     2.jsf
+     3.spring and spring boot framework .. etc
+
+
+====================================================
+
+
+
+
+ Exceptions
+ ===============
+ abnormal program termination.
+
+   types of exceptions : 2 types
+   1.checked exceptions : compile time
+   2.un checked : run time
+
+
+  what is exeption handling?
+  ------------------------------
+  to prevent abnormal termonations, exceptions must be handled. so that
+  remaning statements gets executed.
+
+  exceptions can be handled by try, catch and finally blocks
+
+  try: logic goes here
+  catch : if any ecxeption raised, then catch gets executed
+  finally: always executed, even exception raised or not
+
+
+
+    Thrawable - java.lang package
+
+    Error and Exception extends Theawable
+    ----------------------------------------
+
+
+                         Exception
+
+   IOException(compile time)       RuntimeException (run time)  
+
+   =======================================================
+
+  
+   throw And throws
+
+   note: any class method, that already implemented compile time exception class, then that method must be surrended by try and catch. 
+
+   to bypass exception handling blocks, we use throws keyword
+
+
+
+   user defined exception : 2 types
+   ==================================
+   1. checked exception : extends Exception
+   2. uncheck exception : extends RuntimeException
+
+
+
+
+
+Introduction to Java,Classes and Objects,Methods, Encapsulation, and Conditionals,Data Manipulation and Inheritance,Encapsulation, Polymorphism, and Abstraction,Interfaces, Lambda Expressions, Collections, Date/Time API,Concurrency,Parallelism, and Generics,Localization,Inheritance, Interfaces, Exceptions,
+-------------------------------------------------
+
+ and Deployment,
+---------------------
+ 
+
+
+-------------------------------------------
+I/O and File I/O (NIO.2), Serlilazble
+-------------------------------------------
+The JDBC API
+--------------------------------------------- 
+
+
+
+
+
+
+
+ lambda expressions
+ collections, parellel
+ generics
+ exceptions,
+ I/O, serirlizable
+
+
+
+

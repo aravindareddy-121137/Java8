@@ -1,35 +1,58 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class Account implements Notification {
+public class Account{ // loosely
 	
 	private int balance;
 	
-	
-	
+	private List<Notification> notifications=new ArrayList<>();
+
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public List<Notification> getNotifications() {
+		return notifications;
+	}
+
+	public void setNotifications(List<Notification> notifications) {
+		this.notifications = notifications;
+	}
+
 	public void withDraw(double amount) {
 		balance-=amount;
-		//System.out.println("account is debited with "+amount);
-		sendSms();
+		
+		if(notifications!=null) {
+			
+			//notifications.forEach(notification->notification.notify());
+		
+			for(Notification notification:notifications) {
+				notification.notify(checkBalance());
+			}
+		}
 	}
 	
 	public void deposit(double amount) {
 		balance+=amount;
-		//System.out.println("account is credited with "+amount);
-		sendSms();
+		if(notifications!=null) {
+			for(Notification notification:notifications) {
+				notification.notify(checkBalance());
+			}
+		}
 	}
 	
-	public void checkBalance() {
-		System.out.println("Balance: "+balance);
+	public double checkBalance() {
+		return balance;
 	}
 	
-	@Override
-	public void sendSms() {
-		System.out.println("you account is updated: balance is "+balance);
-		
-	}
-	
-	
+
 	
 
 }
